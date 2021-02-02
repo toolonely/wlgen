@@ -1,1 +1,1 @@
-# wlgen
+# wlgen - a wordlist generator
