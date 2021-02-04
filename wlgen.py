@@ -103,8 +103,8 @@ def generate_words(first_password, alphabet, words_file, max_words_file_size):
         passwords.append(next_password)
         current_password = next_password
     end_time = time.time()
-    total_time = int(end_time - start_time)
-    print("Generated {} passwords in {} seconds".format(len(passwords), total_time))
+    total_time = end_time - start_time
+    print("Generated {} passwords in {:.2f} seconds".format(len(passwords), total_time))
     with open(words_file, "w") as f:
         f.write("\n".join(passwords))
 
