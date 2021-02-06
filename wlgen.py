@@ -96,11 +96,12 @@ def generate_words(first_password, alphabet, words_file, max_words_file_size):
     size = 0
     current_password = first_password
     passwords = []
+    list_append = passwords.append
     start_time = time.time()
     while size < max_words_file_size:
         next_password = next(current_password, alphabet)
         size += len(next_password)
-        passwords.append(next_password)
+        list_append(next_password)
         current_password = next_password
     end_time = time.time()
     total_time = end_time - start_time
