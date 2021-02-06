@@ -10,7 +10,7 @@ STATE_DIR = "~/.local/share/{}".format(APP_NAME)
 ABS_STATE_DIR = os.path.expanduser(STATE_DIR)
 STATE_FILE = "state"
 ABS_STATE_FILE = os.path.join(ABS_STATE_DIR, STATE_FILE)
-FILE_SIZE = 1024 * 1024 * 20  # 25MB
+FILE_SIZE = 1024 * 1024 * 100  # 100MB
 WORDLIST_FILE = "/dev/shm/words"
 ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,-_ "
 
